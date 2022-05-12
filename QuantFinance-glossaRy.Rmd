@@ -1,0 +1,68 @@
+---
+title: "Quantitative Methods in Financial Economics"
+subtitle: "A glossaRy of recipes in R"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+author: "Mike Aguilar"
+output: 
+  html_document:
+    mode: selfcontained
+    toc: true
+    toc_float: true
+    number_sections: yes
+    toc_depth: 3
+---
+
+```{css, echo=FALSE}
+.scroll-200 {
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: inherit;
+}
+```
+
+```{r global-options, include=TRUE, echo = FALSE}
+knitr::opts_chunk$set(fig.width=10, fig.height=4,echo=TRUE, warning=FALSE, message=FALSE, class.output="scroll-200")
+```
+
+
+# Purpose {-}
+This glossary provides a quick reference guide to key functionality in R for anyone working with macro/financial data.  This glossary is NOT a substitute for a textbook nor is it a substitute for package documentation.  
+
+The glossary is organized into 4 chapters, motivated by the manner in which a quantitative analyst might approach the investing process. 
+
+Chapter 1: Explore --- loading/cleaning financial time series data, EDA
+
+Chapter 2: Explain --- modeling with regressions and similar tools
+
+Chapter 3: Forecast --- general forecasting techniques with examples for returns
+
+Chapter 4: Protect --- portfolio optimization for diversification, value at risk, etc..
+
+
+Each section of code is designed to stand alone, complete with references to data and required packages. 
+
+Please contact me if you find typos or if you have suggestions for new items to add to the glossary.  <aguilar-mike@outlook.com> | <https://www.linkedin.com/in/mike-aguilar-econ/> 
+
+A special thanks to Ziming Huang <https://www.linkedin.com/in/ziming-huang/> for tremendous contributions to this document.  
+
+# Explore
+```{r child = 'Ch1-Explore/Ch1.Rmd'}
+```
+
+
+
+# Explain
+```{r child = 'Ch2-Explain/Ch2.Rmd'}
+```
+
+
+
+# Forecast
+```{r child = 'Ch3-Predict/Ch3.Rmd'}
+```
+
+
+
+# Protect
+```{r child = 'Ch4-Protect/Ch4.Rmd'}
+```
